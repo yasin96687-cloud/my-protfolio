@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md. Yasin Arafat — Frontend Web Developer</title>
+<link rel="icon" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav id="navbar">
+  <div class="wrap nav-inner">
+    <a href="#home" class="logo">
+      <img src="images/logo.png" alt="Yasin Arafat Logo" class="logo-img">
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="assets/resume.pdf" download class="btn btn-primary nav-resume">Resume</a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header id="home" class="hero">
+  <div class="glow glow-1"></div>
+  <div class="glow glow-2"></div>
+  <div class="wrap hero-inner">
+    <div class="hero-text">
+      <p class="hello">Hello, I'm</p>
+      <h1>Md. Yasin Arafat</h1>
+      <h2 class="role">I'm a <span class="typed" id="typed"></span><span class="cursor">|</span></h2>
+      <p class="hero-desc">An entry-level Frontend Web Developer with a Diploma in Computer Engineering. I build responsive, user-friendly interfaces with HTML5, CSS3 and JavaScript (ES6+), and I'm currently deepening my backend skills through an Industrial Attachment focused on the MERN stack.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/resume.pdf" download class="btn btn-outline" id="resumeBtn">Download Resume</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/yasin96687-cloud" target="_blank" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.5c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.36-3.83-1.36-.52-1.31-1.26-1.66-1.26-1.66-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.55A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/yasin-arafat-139a853a3/" target="_blank" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="mailto:yasin96687@gmail.com" aria-label="Email" class="social-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.2L19.8 6H4.2zm15.8 1.6-7.4 5.9a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <div class="photo-ring">
+        <div class="photo-placeholder">
+          <img src="images/photo_2026-09-26_23-02-24.jpg" alt="Md Yasin Arafat">
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ================= ABOUT ================= -->
+<section id="about" class="section">
+  <div class="wrap about-grid">
+    <div class="about-photo">
+      <div class="photo-ring small">
+        <div class="photo-placeholder">
+          <img src="./images/photo_2026-09-26_23-02-24.jpg" alt="Md Yasin Arafat about">
+        </div>
+      </div>
+    </div>
+    <div class="about-text">
+      <p class="section-tag">01 — About Me</p>
+      <h2 class="section-title">Get to know me</h2>
+      <p>Hello! I'm <strong>Md. Yasin Arafat</strong>, an entry-level <strong>Frontend Web Developer</strong> from Bangladesh with a Diploma in Computer Engineering. I have hands-on experience building responsive, user-friendly web interfaces and JavaScript applications using HTML5, CSS3, JavaScript (ES6+), and Tailwind CSS.</p>
+      <p>I'm currently completing an Industrial Attachment at <strong>Bdcalling IT Ltd.</strong>, focused on Advanced Backend MERN training — with the goal of growing into a well-rounded full-stack web developer.</p>
+      <ul class="info-list">
+        <li><span class="info-icon">👤</span><span><strong>Name:</strong> Md. Yasin Arafat</span></li>
+        <li><span class="info-icon">🎓</span><span><strong>Education:</strong> Diploma in Computer Engineering</span></li>
+        <li><span class="info-icon">💼</span><span><strong>Focus:</strong> Frontend Web Development</span></li>
+        <li><span class="info-icon">📍</span><span><strong>Location:</strong> Dhaka, Bangladesh</span></li>
+        <li><span class="info-icon">✉️</span><span><strong>Email:</strong> yasin96687@gmail.com</span></li>
+        <li><span class="info-icon">📞</span><span><strong>Phone:</strong> +880 1828-660360</span></li>
+      </ul>
+      <a href="assets/resume.pdf" download class="btn btn-primary">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section id="skills" class="section alt">
+  <div class="wrap">
+    <p class="section-tag center">02 — Skills</p>
+    <h2 class="section-title center">What I work with</h2>
+    <p class="section-sub center">Grouped the way I actually learned them — straight from my JS curriculum.</p>
+
+    <div class="skills-grid">
+      <div class="skill-block">
+        <h3>Frontend</h3>
+        <div class="tag-row">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript (ES6+)</span>
+          <span class="tag">Tailwind CSS</span><span class="tag">Responsive Design</span><span class="tag">Mobile-First</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <h3>JavaScript</h3>
+        <div class="tag-row">
+          <span class="tag">Variables</span><span class="tag">Data Types</span><span class="tag">Conditions</span>
+          <span class="tag">Loops</span><span class="tag">Arrays</span><span class="tag">Objects</span>
+          <span class="tag">Functions</span><span class="tag">Array Methods</span><span class="tag">DOM</span><span class="tag">Events</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <h3>UI Development</h3>
+        <div class="tag-row">
+          <span class="tag">Semantic HTML</span><span class="tag">Flexbox</span><span class="tag">Basic Grid</span>
+          <span class="tag">Reusable UI Sections</span><span class="tag">Cross-Device Layouts</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <h3>Tools</h3>
+        <div class="tag-row">
+          <span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">VS Code</span>
+          <span class="tag">Chrome DevTools</span><span class="tag">Live Server</span>
+        </div>
+      </div>
+      <div class="skill-block">
+        <h3>Practices</h3>
+        <div class="tag-row">
+          <span class="tag">Clean Code</span><span class="tag">Debugging</span>
+          <span class="tag">Browser Testing</span><span class="tag">Version Control</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION / JOURNEY ================= -->
+<section id="education" class="section">
+  <div class="wrap">
+    <p class="section-tag center">03 — Education</p>
+    <h2 class="section-title center">🎓 Education &amp; Journey</h2>
+    <p class="section-sub center">Learning is the foundation of growth — here's a glimpse of my academic and professional journey.</p>
+
+    <!--
+      একটাই লিস্ট, প্রতিটা .t-item — CSS নিজে থেকেই
+      জোড় (even) আর বিজোড় (odd) item আলাদা পাশে বসিয়ে দেয় (nth-child দিয়ে)।
+      নতুন item যোগ করতে চাইলে শুধু আরেকটা .t-item ব্লক বসিয়ে দিলেই হবে।
+    -->
+    <div class="timeline">
+
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Dakhil / SSC Equivalent</h3>
+          <p><strong>Institute:</strong> Aftab Uddin Dakhil Madrasha</p>
+          <p><strong>Session:</strong> 2022–2023</p>
+          <p><strong>Result:</strong> GPA 4.81 / 5.00</p>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>NSDA Certification</h3>
+          <p><strong>Course:</strong> Computer Operation — Level 3</p>
+          <p><strong>Year:</strong> 2025</p>
+          <p class="t-desc">Certified in core computer operations and office productivity tools.</p>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Diploma in Computer Engineering</h3>
+          <p><strong>Institute:</strong> Kishoreganj Govt. Polytechnic Institute</p>
+          <p><strong>Department:</strong> Computer</p>
+          <p><strong>Year:</strong> 2026 — Result Awaiting</p>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-card highlight">
+          <h3>Industrial Attachment — Backend Web Development</h3>
+          <p><strong>Company:</strong> Bdcalling IT Ltd.</p>
+          <p><strong>Duration:</strong> 26 September 2026 – Present</p>
+          <p class="t-desc">Advanced Backend MERN training — building a practical foundation in backend development through structured, industry-oriented training.</p>
+        </div>
+      </div>
+
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-card">
+          <h3>Community Leadership</h3>
+          <p><strong>Role:</strong> Former Coordinator, KiPI Chapter</p>
+          <p><strong>Organization:</strong> Bondhumohol Blood Donor Society</p>
+          <p class="t-desc">Supported student-led blood donation and awareness activities.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section id="projects" class="section alt">
+  <div class="wrap">
+    <p class="section-tag center">04 — Projects</p>
+    <h2 class="section-title center">Things I've built</h2>
+
+    <div class="project-grid">
+      <div class="project-card">
+        <div class="project-top">
+          <span class="status live">Live</span>
+        </div>
+        <h3>JavaScript Calculator</h3>
+        <p>A functional calculator built with JavaScript, using DOM manipulation, event handling, and basic arithmetic operations.</p>
+        <div class="tag-row">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">DOM</span>
+        </div>
+        <div class="project-links">
+          <a href="https://yasin96687-cloud.github.io/Calculator/" target="_blank" class="btn btn-outline small">Live Demo</a>
+          <a href="https://github.com/yasin96687-cloud/Calculator" target="_blank" class="btn btn-ghost small">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="status live">Live</span>
+        </div>
+        <h3>JavaScript Counter App</h3>
+        <p>An interactive counter application with real-time UI updates and increment/decrement functionality.</p>
+        <div class="tag-row">
+          <span class="tag">HTML5</span><span class="tag">CSS3</span><span class="tag">JavaScript</span><span class="tag">Events</span>
+        </div>
+        <div class="project-links">
+          <a href="https://yasin96687-cloud.github.io/counter-app/" target="_blank" class="btn btn-outline small">Live Demo</a>
+          <a href="https://github.com/yasin96687-cloud/counter-app" target="_blank" class="btn btn-ghost small">Source Code</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-top">
+          <span class="status planned">Planned</span>
+        </div>
+        <h3>Next Project — Coming Soon</h3>
+        <p>A backend / MERN-based project is next, as part of my Industrial Attachment at Bdcalling IT Ltd.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="section">
+  <div class="glow glow-3"></div>
+  <div class="wrap">
+    <p class="section-tag center">05 — Contact</p>
+    <h2 class="section-title center">📩 Get In Touch</h2>
+    <p class="section-sub center">Feel free to reach out for collaborations, project discussions, or even just a friendly hello!</p>
+
+    <div class="contact-grid">
+      <div class="contact-left">
+        <h3>Let's Connect</h3>
+        <p>I'd love to hear from you! Whether you want to collaborate on a project, ask a question, or just say hello — feel free to reach out.</p>
+        <p class="contact-detail">📍 Dhaka, Bangladesh</p>
+        <p class="contact-detail">✉️ <a href="mailto:yasin96687@gmail.com">yasin96687@gmail.com</a></p>
+        <p class="contact-detail">📞 <a href="tel:+8801828660360">+880 1828-660360</a></p>
+        <div class="socials">
+          <a href="https://github.com/yasin96687-cloud" target="_blank" aria-label="GitHub" class="social-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.5c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.36-3.83-1.36-.52-1.31-1.26-1.66-1.26-1.66-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.55A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg></a>
+          <a href="https://www.linkedin.com/in/yasin-arafat-139a853a3/" target="_blank" aria-label="LinkedIn" class="social-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+          <a href="mailto:yasin96687@gmail.com" aria-label="Email" class="social-icon"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.2L19.8 6H4.2zm15.8 1.6-7.4 5.9a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6z"/></svg></a>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h3>Send a Message</h3>
+        <form id="contactForm">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+          <textarea rows="4" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn btn-primary full">Send Message</button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap footer-grid">
+    <div class="footer-col">
+      <a href="#home" class="logo">
+        <img src="images/logo.png" alt="Yasin Arafat Logo" class="logo-img">
+      </a>
+      <p>Frontend Web Developer, growing into full-stack — building clean and functional web experiences.</p>
+      <div class="socials">
+        <a href="https://github.com/yasin96687-cloud" target="_blank" aria-label="GitHub" class="social-icon"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M12 .5C5.73.5.98 5.24.98 11.5c0 5.02 3.26 9.28 7.78 10.78.57.1.78-.25.78-.55v-2.14c-3.16.69-3.83-1.36-3.83-1.36-.52-1.31-1.26-1.66-1.26-1.66-1.03-.71.08-.7.08-.7 1.14.08 1.74 1.17 1.74 1.17 1.01 1.74 2.65 1.24 3.3.95.1-.74.4-1.24.72-1.53-2.52-.29-5.17-1.26-5.17-5.6 0-1.24.44-2.25 1.17-3.04-.12-.29-.51-1.45.11-3.02 0 0 .96-.31 3.14 1.16a10.9 10.9 0 0 1 5.72 0c2.18-1.47 3.14-1.16 3.14-1.16.62 1.57.23 2.73.11 3.02.73.79 1.17 1.8 1.17 3.04 0 4.35-2.65 5.31-5.18 5.59.41.35.77 1.04.77 2.1v3.11c0 .3.2.65.79.55A10.99 10.99 0 0 0 23.02 11.5C23.02 5.24 18.27.5 12 .5z"/></svg></a>
+        <a href="https://www.linkedin.com/in/yasin-arafat-139a853a3/" target="_blank" aria-label="LinkedIn" class="social-icon"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.44-2.14 2.94v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="mailto:yasin96687@gmail.com" aria-label="Email" class="social-icon"><svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.2L19.8 6H4.2zm15.8 1.6-7.4 5.9a1 1 0 0 1-1.2 0L4 7.6V18h16V7.6z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Info</h4>
+      <p>📍 Dhaka, Bangladesh</p>
+      <p>✉️ yasin96687@gmail.com</p>
+      <p>📞 +880 1828-660360</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© <span id="year"></span> Md. Yasin Arafat. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
